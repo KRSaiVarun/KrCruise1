@@ -1,0 +1,59 @@
+KrCruise1 Website
+Template Report
+DATE: October 29, 2024
+COURSE TITLE: Web Development
+STUDENT’S NAME: [Your Name Here]
+
+HTML Structure
+HTML Tags and Their Purposes:
+
+<!DOCTYPE html>: Declares the document type as HTML5, ensuring the browser renders it correctly.
+<html lang="en">: The root element, indicating the document's language is English.
+<head>: Contains metadata, links to stylesheets, and scripts that are not directly displayed on the page.
+<meta charset="UTF-8">: Sets the character encoding to UTF-8, supporting various characters.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Ensures the webpage is responsive on different devices.
+<title>KrCruise</title>: Defines the title of the webpage, displayed in the browser tab.
+<body>: Encloses the main content of the webpage.
+<header>: Contains the website's logo and navigation menu for easy access to different sections.
+<main>: The main content area that features various sections like booking confirmation and about information.
+<footer>: Provides copyright information and links to social media platforms.
+Key HTML Elements in the Body:
+
+Navigation Menu: Provides links to Home, About, and Contact sections for easy navigation.
+Booking Confirmation Section: Displays booking details like destination, location, and total price, including a share option 
+for WhatsApp.
+About Section: Offers a brief description of KrCruise and its services, accompanied by a relevant image.
+CSS Styling
+Inline Styles vs. Custom CSS:
+
+Inline Styles: The CSS is primarily defined within a <style> tag in the <head>. This includes custom styles tailored to enhance the 
+aesthetic appeal and functionality of the website.
+body: General styling for the body, including font family, background color, and line height.
+header: Styles for the header section, including background color and text alignment.
+.confirmation: Styling for the booking confirmation section, with background color, padding, and shadow effects to create a card-like 
+appearance.
+Media Queries: Used to ensure responsiveness across various devices, adjusting layout and styles for smaller screens.
+JavaScript Functionality
+Key Variables:
+
+destination: Stores the selected cruise destination from local storage.
+location: Holds the location of the cruise.
+price: Contains the total price of the booking.
+images: An object mapping destination names to their corresponding image URLs.
+Functions:
+document.addEventListener('DOMContentLoaded', ...): Sets up event listeners and initializes booking details upon loading the page.
+whatsappShare: Generates a WhatsApp share link based on the booking details, allowing users to easily share their confirmation.
+updateBookingDetails(): Retrieves and displays booking information from local storage, including the destination name, location, and
+total price.
+
+Summary of Features
+User-Friendly Interface: The website has a clean layout, making navigation intuitive for users.
+Responsive Design: The use of media queries ensures the site looks good on various devices, enhancing user experience.
+Interactive Elements: The booking confirmation section allows users to share details on WhatsApp, adding a social component to the
+booking experience.
+Information-Rich Content: Each section contains valuable information that helps users make informed decisions about their cruise options.
+Conclusion
+The KrCruise website effectively combines HTML for structure, CSS for styling, and JavaScript for interactivity, creating a functional
+and attractive platform for cruise bookings. The design focuses on user experience, ensuring that users can easily find information,
+make bookings, and share their experiences. Future enhancements could include adding more interactive features, improving accessibility, 
+and expanding the range of available destinations.
