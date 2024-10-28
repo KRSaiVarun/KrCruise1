@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrCruise - Your Premier Cruise Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00796b;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo img {
+            max-width: 100px;
+            border-radius: 50%;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .image2 {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #00796b;
+            color: #fff;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            text-decoration: underline;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #005b4d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="logo.jpg" alt="KrCruise Logo"></a>
+        </div>
+        <h1>Welcome to KrCruise</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <h2>Welcome to Our Cruise Booking Website</h2>
+            <p>Explore stunning cruise destinations and book your next cruise with us.</p>
+            <img src="https://media.istockphoto.com/id/2040355522/photo/young-woman-looking-at-view-of-the-porto-katsiki-beach-from-the-boat-in-parga-in-greece.jpg?s=1024x1024&w=is&k=20&c=tEkfsdIy5DIcVHiLIBisx3cSXFdAGGyAldYS_tysy3U=" alt="Hero image" class="image2">
+        </section>
+
+        <section id="destinations" class="section">
+            <h2>Popular Cruise Destinations</h2>
+            <div>
+                <h3>Caribbean</h3>
+                <img src="https://media.istockphoto.com/id/1445528421/photo/aerial-view-of-cruise-liners-in-olden-in-norway.jpg?s=1024x1024&w=is&k=20&c=Gcshak1aWp0VsY2TskARgxMG0shl2jebpMxpdMOk5t4=" alt="Caribbean Cruise" class="image2">
+                <p>Enjoy the sun-soaked beaches and vibrant culture of the Caribbean.</p>
+            </div>
+            <div>
+                <h3>Mediterranean</h3>
+                <img src="https://plus.unsplash.com/premium_photo-1673139081468-d6c013defbc2?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mediterranean Cruise" class="image2">
+                <p>Discover historic sites and beautiful landscapes in the Mediterranean.</p>
+            </div>
+            <div>
+                <h3>Alaska</h3>
+                <img src="https://images.unsplash.com/photo-1515678821046-f1ba75cb9f9e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Alaska Cruise" class="image2">
+                <p>Experience the majestic beauty of Alaska's glaciers and wildlife.</p>
+            </div>
+        </section>
+
+        <section id="booking" class="section">
+            <h2>Book Your Cruise</h2>
+            <form id="bookingForm">
+                <div>
+                    <label for="destination">Select Destination:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="" disabled selected>Select a cruise package</option>
+                        <option value="Caribbean" data-price="40000">Caribbean - ₹40,000</option>
+                        <option value="Mediterranean" data-price="48000">Mediterranean - ₹48,000</option>
+                        <option value="Alaska" data-price="56000">Alaska - ₹56,000</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="location">Enter Your Location:</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div>
+                    <label for="total">Total Price:</label>
+                    <input type="number" id="total" name="total" readonly>
+                </div>
+                <button type="submit" class="cta-button">Confirm Booking</button>
+            </form>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About KrCruise</h2>
+            <p>Welcome to KrCruise, your premier destination for unforgettable cruise experiences. Our team of experts is dedicated to helping you find the perfect voyage, whether you're seeking relaxation, adventure, or a mix of both.</p>
+            <img src="https://images.pexels.com/photos/3583429/pexels-photo-3583429.jpeg" alt="Beautiful cruise ship" class="image2">
+            <p>Explore our curated selection of top cruises, and let us handle the details so you can focus on making memories that last a lifetime.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to book a trip, please fill out the form below:</p>
+            <form action="#">
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                </div>
+                <div>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>KrCruise. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const bookingForm = document.getElementById('bookingForm');
+        const destinationSelect = document.getElementById('destination');
+        const totalInput = document.getElementById('total');
+
+        destinationSelect.addEventListener('change', function() {
+            const selectedOption = this.options[this.selectedIndex];
+            totalInput.value = selectedOption.dataset.price;
+        });
+
+        bookingForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Booking confirmed! Total price: ₹' + totalInput.value);
+        });
+    </script>
+</body>
+</html>
